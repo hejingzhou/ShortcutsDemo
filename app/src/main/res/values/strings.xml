@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ShortcutsDemo</string>
+    <string name="shortcuts_1">长标签-1</string>
+    <string name="shortcuts_2">快捷键禁用消息-2</string>
+    <string name="shortcuts_3">短标签-3</string>
+
+
+    <string name="shortcuts_4">长标签-4</string>
+    <string name="shortcuts_5">快捷键禁用消息-5</string>
+    <string name="shortcuts_6">短标签-6</string>
+</resources>

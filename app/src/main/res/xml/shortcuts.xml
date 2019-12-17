@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- 第一个静态shortcut -->
+    <shortcut
+        android:shortcutId="one_shortcut"
+        android:enabled="true"
+        android:icon="@mipmap/shoutao"
+        android:shortcutLongLabel="@string/shortcuts_1"
+        android:shortcutDisabledMessage="@string/shortcuts_2"
+        android:shortcutShortLabel="@string/shortcuts_3">
+        <!--
+            一个shortcut，当有多个intents与之相关联时，在用户启动该shortcut时，最先呈现给用户的是
+            <intent>...</intent>集合中最后一个intent操作事件。
+            即这里创建了一个intent的回退栈，最后一个才是被快捷方式打开的那个。
+        -->
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="cn.com.jmw.shortcutsdemo"
+            android:targetClass="cn.com.jmw.shortcutsdemo.MainActivity"/>
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="cn.com.jmw.shortcutsdemo"
+            android:targetClass="cn.com.jmw.shortcutsdemo.OneActivity"/>
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="cn.com.jmw.shortcutsdemo"
+            android:targetClass="cn.com.jmw.shortcutsdemo.TwoActivity"/>
+
+    </shortcut>
+    <!-- 第二个静态shortcut -->
+    <shortcut
+        android:shortcutId="two_shortcut"
+        android:enabled="true"
+        android:icon="@mipmap/shengdanshu"
+        android:shortcutLongLabel="@string/shortcuts_4"
+        android:shortcutDisabledMessage="@string/shortcuts_5"
+        android:shortcutShortLabel="@string/shortcuts_6">
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="cn.com.jmw.shortcutsdemo"
+            android:targetClass="cn.com.jmw.shortcutsdemo.MainActivity"/>
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="cn.com.jmw.shortcutsdemo"
+            android:targetClass="cn.com.jmw.shortcutsdemo.OneActivity"/>
+
+    </shortcut>
+
+</shortcuts>
